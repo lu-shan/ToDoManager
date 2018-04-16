@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_export"
+        android:icon="@mipmap/ic_assignment_returned_black_24dp"
+        android:title="Export" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@mipmap/ic_settings_black_24dp"
+        android:title="Settings" />
+
+    <item
+        android:id="@+id/nav_exit"
+        android:icon="@mipmap/ic_exit_to_app_black_24dp"
+        android:title="Exit Program" />
+
+</menu>

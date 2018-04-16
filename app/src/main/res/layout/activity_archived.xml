@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cejv669.lu_sh.todomanager.ActivityArchived">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableRow
+            android:id="@+id/tableRow_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tv_archive_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorTitle"
+                android:gravity="center"
+                android:text="@string/tv_archive_title"
+                android:textColor="#000"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_list_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_list_task"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="5"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/tv_list_task"
+                android:textColor="#000"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/tv_list_deadline"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="2"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/tv_list_deadline"
+                android:textColor="#000"
+                android:textSize="12dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_list_priority"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/tv_list_priority"
+                android:textColor="#000"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/tv_list_completed"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="0.5"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/tv_list_completed"
+                android:textColor="#000"
+                android:textSize="12dp"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ListView
+                android:id="@+id/listview_archive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:divider="@null" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@android:color/white"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_a_records"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="@string/tv_a_records" />
+
+            <Button
+                android:id="@+id/btn_return"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:onClick="btnReturn"
+                android:text="@string/btn_return" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

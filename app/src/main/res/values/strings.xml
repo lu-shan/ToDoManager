@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">ToDoManager</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="menu_add">Add Task</string>
+    <string name="menu_showarchive">Show Archive</string>
+    <string name="menu_report">Report</string>
+    <string name="menu_deleteall">Delete All</string>
+    <string name="menu_complete">Complete</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_archive">Archive</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_unarchive">Unarchive</string>
+
+    <string name="menu_a_return">Return</string>
+    <string name="menu_a_unarchive">Unarchive All</string>
+    <string name="menu_a_delete">Delete All</string>
+
+    <string name="tv_add_title">Add Record</string>
+    <string name="tv_todo">To Do</string>
+    <string name="tv_duedate">Deadline</string>
+    <string name="btn_pickdate">Pick Date</string>
+    <string name="btn_picktime">Pick Time</string>
+    <string name="tv_priority">Priority</string>
+    <string-array name="priority_arrays">
+        <item>Low</item>
+        <item>Normal</item>
+        <item>Urgent</item>
+    </string-array>
+    <string name="btn_add">Add</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <string name="tv_settings_title">Settings</string>
+    <string name="tv_sort">Sorting Order</string>
+    <string-array name="sorting_arrays">
+        <item>Ascend By Date</item>
+        <item>Descend By Date</item>
+        <item>Priority</item>
+    </string-array>
+    <string name="tv_show_completed">Show Completed Tasks?</string>
+    <string name="tv_show_reminder">Show Deadline Reminder?</string>
+    <string name="btn_close">Close</string>
+
+    <string name="tv_archive_title">Archive List</string>
+    <string name="tv_list_task">TASK</string>
+    <string name="tv_list_deadline">DEADLINE</string>
+    <string name="tv_list_priority">PRIORITY</string>
+    <string name="tv_list_completed">DONE</string>
+    <string name="tv_a_records">Records</string>
+    <string name="btn_return">Return</string>
+
+    <string name="tv_main_title">To Do List</string>
+
+    <string name="tv_export_title">Export to csv</string>
+    <string name="tv_export_result">Please choose which list to export.</string>
+    <string name="btn_export_todo">Export ToDo list to csv file</string>
+    <string name="btn_export_archive">Export Archive list to csv file</string>
+    <string name="btn_export_return">Return</string>
+
+</resources>
