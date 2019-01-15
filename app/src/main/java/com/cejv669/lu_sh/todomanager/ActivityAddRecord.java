@@ -5,6 +5,7 @@ import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -115,6 +116,7 @@ public class ActivityAddRecord extends FragmentActivity {
         // DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd"); only available above Android API 26
 
         @Override
+        @NonNull
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             // Use the current date as the default date in the picker
             //final Calendar c = Calendar.getInstance();
@@ -140,6 +142,7 @@ public class ActivityAddRecord extends FragmentActivity {
     public static class TimePickerFragment extends DialogFragment implements TimePickerDialog.OnTimeSetListener {
 
         @Override
+        @NonNull
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             // Use the current time as the default values for the picker
             //final Calendar c = Calendar.getInstance();
@@ -158,11 +161,14 @@ public class ActivityAddRecord extends FragmentActivity {
     }
 
     public static void editDateText (int year, int month, int day) { //format the Date
-        String monthText = String.valueOf(month);
+        String monthText;
         String dayText=String.valueOf(day);
         if (month<9){
-            monthText="0"+ (month + 1);
+            monthText="0"+ String.valueOf(month + 1);
+        } else {
+            monthText= String.valueOf(month + 1);
         }
+        // in Calendar.MONTH, Jan is 0, Feb is 1,..., Dec is 11, UNDec is 12 (used in lunar calendar)
         if (day<10) {
             dayText ="0"+day;
         }
@@ -206,7 +212,7 @@ public class ActivityAddRecord extends FragmentActivity {
             DatabaseManager dm = new DatabaseManager(this);
 
             if (message.equals("ADD")) {
-                if (dm.addToDo(t) == true) {
+                if (dm.addToDo(t)) {
 
                     Intent intent = new Intent();
                     setResult(Activity.RESULT_OK, intent);
